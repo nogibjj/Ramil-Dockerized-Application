@@ -22,7 +22,7 @@ jobs:
           python-version: '3.12.1'  
 
       - name: Create environment 
-        run: make setup
+        run: make install
       
       - name: Format code
         run : make format
@@ -31,4 +31,4 @@ jobs:
         run: make lint
 
       - name: Run tests
-        run: make test
+        run: make test_file
