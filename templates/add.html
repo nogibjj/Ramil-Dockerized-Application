@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Quote</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Quote</h1>
+        {% if message %}
+            <p class="success">{{ message }}</p>
+        {% endif %}
+        <form method="POST" class="form">
+            <textarea name="quote" placeholder="Enter your quote here..." required></textarea><br>
+            <button type="submit" class="btn">Add Quote</button>
+        </form>
+        <a href="/" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
